@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html>
-<title>Medical Writer Template</title>
-<meta charset="UTF-8">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="index.css">
+</head>
 <body>
+<!-- MAIN (Center website) -->
+<div class="main">
+<h2>PROFESSIONAL PORTFOLIO <h2>
+<hr>
+<header class="w3-container w3-xlarge w3-padding-24">
+<a href="#work" class="w3-left w3-button w3-blue" >MY WORK</a>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+<a href="#about" class="w3-right w3-button w3-blue">ABOUT</a>
+</header>
+<div class="content">
+  <video src="h2.mp4" autoplay controls muted width="100%"></video>
+   <h3>Can Artificial Intelligence combat COVID-19?</h3>
+  
+ </div>
 
-  <!-- Header -->
-  <header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left w3-button w3-white">MY WQRK</a>
-    <a href="#about" class="w3-right w3-button w3-white">ABOUT</a>
-  </header>
 
-  <!-- Photo Grid -->
-  <div class="w3-row">
-    <div class="w3-half">
-      <img src="med02.jpg" style="width:100%">
-
-      <img src="med04.jpeg" style="width:100%"> 
-      <video width="100%" oop="true" controls autoplay muted>
-        <source src="h1.mp4" type="video/mp4">
-     </video>
-
-        
+<!-- Portfolio Gallery Grid -->
+<div class="row" id="work">
+  <div class="column">
+    <div class="content">
+      <img src="med01.jpg" alt="Mountains" style="width:100%">
+      <h3>Care for the Dying: Recognizing palliative care</h3>
      
-      
-    </div>
-
-    <div class="w3-half">
-        <video width="100%" loop="true" controls autoplay muted>
-        <source src="h2.mp4" type="video/mp4">
-        </video>
-      <img src="med01.jpg" style="width:100%">
-      <img src="med03.jpg" style="width:100%">
     </div>
   </div>
+  <div class="column">
+    <div class="content">
+    <img src="med02.jpg" alt="Lights" style="width:100%">
+      <h3>How common are Needle Stick Injuries?</h3>
+     
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="med03.jpg" alt="Nature" style="width:100%">
+      <h3>Report on HIV/AIDS in October 2014</h3>
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="med04.jpeg" alt="Mountains" style="width:100%">
+      <h3>Mental Illness: Challenge in the Workplace</h3>
+    </div>
+  </div>
+
+
+
+
   
-<!-- End Page Content -->
+<!-- END GRID -->
 </div>
 
-<!-- Footer / About Section -->
-<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
-  <h2>ABOUT</h2>
+<div class="content">
+  <video src="h1.mp4" autoplay controls muted width="100%"></video>
+   <h3>How can technology reduce the impact of COVID-19?</h3>
+  
+ </div>
+
+ <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h3>ABOUT</h3>
   <img src="me.jpeg" class="w3-image w3-padding-32" width="180" height="180">
 <div class="w3-container w3-large w3-padding-18">
     <p>I am Dr. Louell Sala and I have been writing medical related content since December 2015. I have 10 years experience in Family and Occupational Medicine, 2 years in Pharmaceutical Medicine (Medical Science Liaison) and 3 years in Web Development. 
@@ -55,12 +76,14 @@
     I am the creator of the website <a href="https://careonlineportal.com/login.php">Care Online portal</a> and <a href="https://www.medtechsolutions.io/">Medtech Solutions.</a> 
     <br>
     My professional profile is <a href="https://www.linkedin.com/in/louells/">LinkedIn</a></p>
-  
+    <br>
+    <p>powered by <a href="https://www.medtechsolutions.io/">medtechsolutions.io </a> </p>  
 </div>
-  <br>
-  <p>powered by <a href="https://www.medtechsolutions.io/">medtechsolutions.io </a> </p>
- 
+    
 </footer>
- 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script src="index.js"></script>
 </body>
 </html>

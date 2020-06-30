@@ -1,7 +1,102 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-    font-family: "Raleway", Arial, sans-serif;
-    background-color: black;    
+  background-color: rgb(45, 207, 212);
+  padding: 20px;
+  font-family: Arial, Arial, Helvetica, sans-serif;
 }
+
+/* Center website */
+.main {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: rgb(12, 12, 12);
+}
+
+h2 {
+  color: rgb(49, 46, 46);
+  text-align: center;
+}
+
+h3 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* about */
+
 .w3-row img {margin-bottom: -8px}
+
+/* button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 
