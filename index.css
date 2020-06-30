@@ -1,12 +1,28 @@
-* {
-  box-sizing: border-box;
+body {
+  animation: 10000ms ease-in-out infinite color-change;
 }
 
-body {
-  background-color: rgb(45, 207, 212);
-  padding: 20px;
-  font-family: Arial, Arial, Helvetica, sans-serif;
+@keyframes color-change {
+  0% {
+    background-color: rgb(34, 146, 137);
+  }
+  20% {
+    background-color: rgb(195, 223, 35);
+  }
+  40% {
+    background-color: rgb(206, 7, 7);
+  }
+  60% {
+    background-color: rgb(196, 37, 196);
+  }
+  80% {
+    background-color: rgb(11, 120, 148);
+  }
+  100% {
+    background-color: rgb(24, 163, 152);
+  }
 }
+
 
 /* Center website */
 .main {
@@ -15,18 +31,19 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   word-break: break-all;
-  color: rgb(12, 12, 12);
+  color: rgb(206, 200, 200);
 }
 
 h2 {
-  color: rgb(49, 46, 46);
+  color: rgb(214, 213, 213);
   text-align: center;
 }
 
 h3 {
-  color: black;
+  color: rgb(12, 12, 12);
+  text-align: center;
 }
 
 p {
@@ -97,6 +114,10 @@ p {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: rgb(83, 68, 110);
 }
+
+
+
+
 
